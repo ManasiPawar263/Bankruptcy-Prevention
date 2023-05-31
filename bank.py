@@ -37,7 +37,7 @@ result_ab = cross_val_score(model_ab, x, y, cv=kfold)
 #Accuracy
 print(result_ab.mean())
 
-
+st.title('Bankruptcy Prevention :bank:')
 
 filename = 'final_Adaboost_model.pkl'
 pickle.dump(model_ab, open(filename,'wb'))
